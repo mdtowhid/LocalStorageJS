@@ -8,3 +8,4 @@ SOME INSTRUCTINS:
 1. Open VS code editor,
 2. In win press ctr+shift+p
 3. Search for live server. (if live server is not available in vs code. Please install live server extensions in vs code).
+4. By selecting live server press enter.
