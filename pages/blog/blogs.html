@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocalStorage | Blogs</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../../css/menu.css" />
+    <link rel="stylesheet" href="../../css/blog.css" />
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <div class="wrapper">
+      <div class="banner">
+        <div class="banner-box login-signup-banner-box">
+          <button id="addBlogButton">CREATE A NEW BLOG</button>
+        </div>
+      </div>
+
+      <div class="modal" id="modalId">
+        <div class="modal-content active" id="modalContent">
+          <form id="blogForm">
+            <h3>ADD NEW BLOG</h3>
+            <select id="blogCategory">
+              <option value="none">--Select Blog Category--</option>
+              <option value="Education">Education</option>
+              <option value="Story">Story</option>
+              <option value="History">History</option>
+              <option value="SCIFI">SCIFI</option>
+            </select>
+            <input type="text" id="blogTitle" placeholder="title" />
+            <textarea type="text" id="blogDescrption" placeholder="descrption" rows="5" cols="5"></textarea>
+
+            <p style="text-align: right;margin-top: -9px;"><span id="remainingCounter">200</span> characters remaining.</p>
+            <input type="submit" value="SAVE" id="saveButton" />
+            <p id="formError" style="margin-top: -5px; color: red"></p>
+          </form id="blogForm">
+        </div>
+      
+      
+      
+      </div>
+
+      <div class="blog-container blog-header" id="blogHeader">
+        <h2>All Blogs</h2>
+      </div>
+      
+      <div class="blog-container" id="blogList"></div>
+      <div class="blog-container more-desc" id="moreAboutBlog" >
+      </div>
+
+      <div class="container">
+        <div class="section">
+          <div id="userInformations"></div>
+        </div>
+      </div>
+    </div>
+    <span style="display: none;" id="hiddenId"></span>
+    <script src="../../menu.js"></script>
+    <script src="../../scripts/blog.js"></script>
+    <script src="../../scripts/user.js"></script>
+    <script src="../../scripts/auth.js"></script>
+    <script>
+      if (
+        sessionStorage.getItem("userEmail") === null &&
+        sessionStorage.getItem("userPassword") === null
+      ) {
+        window.location.href = "http://127.0.0.1:5500/pages/auth/login.html";
+      }
+    </script>
+  </body>
+</html>
+

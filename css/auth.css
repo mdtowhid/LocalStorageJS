@@ -1,0 +1,54 @@
+.login-signup-banner-box {
+    font-family: verdana;
+    font-size: 1.7em;
+    font-weight: 200 !important;
+}
+
+.sign-up-login-form {
+    width: 420px;
+    height: auto;
+    background-color: #007ACC;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: 0 0 50px #1000;
+    border-radius: 2px;
+    padding: 20px;
+    /* padding-top: 40px; */
+}
+
+.sign-up-login-form h2 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.sign-up-login-form input {
+    width: 98%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 12px;
+    font-size: 21px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.sign-up-login-form input[id="email"] {
+    margin-top: 15px;
+}
+
+.sign-up-login-form input[type="submit"] {
+    padding: 7px;
+    width: 100px;
+    text-transform: uppercase;
+    margin: 0 5px;
+    color: white;
+    background: mediumseagreen;
+    cursor: pointer;
+}
+
+.sign-up-login-form input[type="submit"]:hover {
+    background-color: limegreen;
+}

@@ -1,0 +1,42 @@
+.templateElements {
+  text-transform: capitalize;
+  padding: 10px;
+  display: flex;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.image {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 2em;
+  box-shadow: 0 0 5px #ccc;
+  border-radius: 50%;
+  margin-right: 30px;
+  cursor: pointer;
+  transition: 0.5s linear;
+}
+
+.image:hover {
+  box-shadow: 0 0 2px red, inset 0 0 5px red;
+}
+
+.content {
+  padding: 15px;
+  transition: 0.5s linear;
+}
+
+.content:hover {
+  box-shadow: 0 0 5px #ccc;
+  border-radius: 5px;
+}
+
+.content h4 {
+  margin-bottom: 10px;
+}
+
+.content p {
+  text-decoration: none !important;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../../css/menu.css" />
+    <link rel="stylesheet" href="../../css/auth.css" />
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <div class="wrapper">
+      <div class="banner">
+        <div class="banner-box login-signup-banner-box">
+          <h3>Create an account</h3>
+        </div>
+      </div>
+      <div class="sign-up-login-form">
+        <h2>Sign up</h2>
+        <br />
+        <input type="text" id="nameId" placeholder="full name" autofocus />
+        <input type="email" id="email" placeholder="email" />
+        <input type="password" id="password" placeholder="password" />
+        <input type="submit" value="sign up" id="signupButton" />
+        <div id="successError"></div>
+      </div>
+    </div>
+    <script src="../../scripts/auth.js"></script>
+    <script src="../../menu.js"></script>
+  </body>
+</html>

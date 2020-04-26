@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocalStorage | Todo</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../../css/todo.css" />
+    <link rel="stylesheet" href="../../css/menu.css" />
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <div class="modal" id="modalId">
+      <div class="modal-content active" id="modalContent"></div>
+    </div>
+    <div class="wrapper">
+      <div class="banner">
+        <div class="banner-box">
+          <input type="text" id="inputBox" placeholder="name" autofocus />
+          <input type="text" id="inputDetails" placeholder="details" />
+          <button class="btn" id="addButton">Add</button>
+          <p id="hiddenId"></p>
+        </div>
+      </div>
+      <div class="container" style="margin-top: 10px;">
+        <div id="successError"></div>
+      </div>
+      <div class="container">
+        <div class="section" id="sectionWrapper"></div>
+      </div>
+      <div class="container">
+        <div class="section">
+          <div id="userInformations"></div>
+        </div>
+      </div>
+    </div>
+    <script src="../../app.js"></script>
+    <script src="../../menu.js"></script>
+    <script src="../../scripts/todo.js"></script>
+    <script src="../../scripts/auth.js"></script>
+    <script src="../../scripts/user.js"></script>
+    <script>
+      if (
+        sessionStorage.getItem("userEmail") === null &&
+        sessionStorage.getItem("userPassword") === null
+      ) {
+        window.location.href = "http://127.0.0.1:5500/pages/auth/login.html";
+      }
+    </script>
+  </body>
+</html>
